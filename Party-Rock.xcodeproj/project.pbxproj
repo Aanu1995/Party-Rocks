@@ -13,6 +13,10 @@
 		CECDEE3525DD68D9004CC298 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECDEE3325DD68D9004CC298 /* Main.storyboard */; };
 		CECDEE3725DD68DB004CC298 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CECDEE3625DD68DB004CC298 /* Assets.xcassets */; };
 		CECDEE3A25DD68DB004CC298 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECDEE3825DD68DB004CC298 /* LaunchScreen.storyboard */; };
+		CECDEE4925DD7871004CC298 /* still time.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CECDEE4825DD7871004CC298 /* still time.ttf */; };
+		CECDEE4C25DD7E86004CC298 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECDEE4B25DD7E86004CC298 /* VideoViewController.swift */; };
+		CECDEE4F25DD80E6004CC298 /* ContentViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECDEE4E25DD80E6004CC298 /* ContentViewCell.swift */; };
+		CECDEE5225DD85C0004CC298 /* PartyRockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECDEE5125DD85C0004CC298 /* PartyRockModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		CECDEE3625DD68DB004CC298 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CECDEE3925DD68DB004CC298 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CECDEE3B25DD68DB004CC298 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CECDEE4825DD7871004CC298 /* still time.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "still time.ttf"; sourceTree = "<group>"; };
+		CECDEE4B25DD7E86004CC298 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		CECDEE4E25DD80E6004CC298 /* ContentViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewCell.swift; sourceTree = "<group>"; };
+		CECDEE5125DD85C0004CC298 /* PartyRockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyRockModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,10 @@
 		CECDEE2125DD68D8004CC298 = {
 			isa = PBXGroup;
 			children = (
+				CECDEE4725DD77EB004CC298 /* Files */,
+				CECDEE4525DD68FC004CC298 /* Controller */,
+				CECDEE4425DD68F8004CC298 /* View */,
+				CECDEE4225DD68EB004CC298 /* Model */,
 				CECDEE2C25DD68D9004CC298 /* Party-Rock */,
 				CECDEE2B25DD68D9004CC298 /* Products */,
 			);
@@ -56,15 +68,47 @@
 		CECDEE2C25DD68D9004CC298 /* Party-Rock */ = {
 			isa = PBXGroup;
 			children = (
-				CECDEE2D25DD68D9004CC298 /* AppDelegate.swift */,
-				CECDEE2F25DD68D9004CC298 /* SceneDelegate.swift */,
-				CECDEE3125DD68D9004CC298 /* ViewController.swift */,
-				CECDEE3325DD68D9004CC298 /* Main.storyboard */,
-				CECDEE3625DD68DB004CC298 /* Assets.xcassets */,
-				CECDEE3825DD68DB004CC298 /* LaunchScreen.storyboard */,
 				CECDEE3B25DD68DB004CC298 /* Info.plist */,
 			);
 			path = "Party-Rock";
+			sourceTree = "<group>";
+		};
+		CECDEE4225DD68EB004CC298 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CECDEE5125DD85C0004CC298 /* PartyRockModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CECDEE4425DD68F8004CC298 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CECDEE3325DD68D9004CC298 /* Main.storyboard */,
+				CECDEE3625DD68DB004CC298 /* Assets.xcassets */,
+				CECDEE3825DD68DB004CC298 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CECDEE4525DD68FC004CC298 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CECDEE4E25DD80E6004CC298 /* ContentViewCell.swift */,
+				CECDEE2D25DD68D9004CC298 /* AppDelegate.swift */,
+				CECDEE2F25DD68D9004CC298 /* SceneDelegate.swift */,
+				CECDEE3125DD68D9004CC298 /* ViewController.swift */,
+				CECDEE4B25DD7E86004CC298 /* VideoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CECDEE4725DD77EB004CC298 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				CECDEE4825DD7871004CC298 /* still time.ttf */,
+			);
+			path = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CECDEE3A25DD68DB004CC298 /* LaunchScreen.storyboard in Resources */,
+				CECDEE4925DD7871004CC298 /* still time.ttf in Resources */,
 				CECDEE3725DD68DB004CC298 /* Assets.xcassets in Resources */,
 				CECDEE3525DD68D9004CC298 /* Main.storyboard in Resources */,
 			);
@@ -137,8 +182,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CECDEE4F25DD80E6004CC298 /* ContentViewCell.swift in Sources */,
+				CECDEE5225DD85C0004CC298 /* PartyRockModel.swift in Sources */,
 				CECDEE3225DD68D9004CC298 /* ViewController.swift in Sources */,
 				CECDEE2E25DD68D9004CC298 /* AppDelegate.swift in Sources */,
+				CECDEE4C25DD7E86004CC298 /* VideoViewController.swift in Sources */,
 				CECDEE3025DD68D9004CC298 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
